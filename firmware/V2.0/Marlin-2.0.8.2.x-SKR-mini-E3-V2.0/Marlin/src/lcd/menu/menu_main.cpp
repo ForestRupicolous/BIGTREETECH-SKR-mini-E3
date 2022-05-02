@@ -64,6 +64,9 @@
 
 void menu_tune();
 void menu_cancelobject();
+#if ENABLED(PREHEAT_SHORTCUT_MENU_ITEM)
+  void menu_preheat_only();
+#endif
 void menu_motion();
 void menu_temperature();
 void menu_configuration();
@@ -93,9 +96,6 @@ void menu_configuration();
   void menu_spindle_laser();
 #endif
 
-#if ENABLED(PREHEAT_SHORTCUT_MENU_ITEM)
-  void menu_preheat_only();
-#endif
 
 #if HAS_MULTI_LANGUAGE
   void menu_language();
